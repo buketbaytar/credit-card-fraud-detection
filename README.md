@@ -77,7 +77,7 @@ Recall Odaklı Tercih: Yönetim "Müşteri rahatsız olsa da olur, yeter ki hiç
 Kapanış:""Elde edilen bu sonuçlar doğrultusunda, Karar Ağacı (Decision Tree) modeli sayesinde manuel inceleme süreçleri otomatikleştirilebilir, bankanın sahtekarlık kaynaklı finansal kayıpları minimize edilirken müşteri memnuniyetsizliği de en düşük seviyede tutulabilir."
 
 -------------------------------------------------
-## 7. Web Arayüzü ve Canlı Test (Streamlit App)
+ 7. Web Arayüzü ve Canlı Test (Streamlit App)
 
 Geliştirilen modelin canlı ortamda test edilebilmesi ve kullanıcı dostu bir simülasyon sunulması amacıyla Streamlit ile interaktif bir web arayüzü (`app.py`) tasarlanmıştır.
 Amaçlar
@@ -94,6 +94,17 @@ Amaçlar
 Modelin yaptığı değerlendirme sonucunda arayüz üzerinden anlık olarak şu çıktılar üretilir:
 Yüksek Risk (`Prediction = 1`): İşlem şüpheli bulunarak `BLOKE EDILDI` şeklinde görsel uyarı verilir.
 Güvenli İşlem (`Prediction = 0`): İşlem güvenli bulunarak `İŞLEM ONAYLANDI` şeklinde onay mesajı gösterilir.
+
+--------------------------------
+-------Veri Seti Bilgisi------ 
+Kaynak: Kaggle (Machine Learning Group - ULB) 
+Lisans: Open Data Commons Open Database License (ODbL) / Akademik Kullanıma Açık
+Boyut: 284.807 örnek, 31 öznitelik
+Öznitelikler: PCA Dönüşümü Yapılmış Değişkenler (V1-V28), İşlem Tutarı (Amount), Zaman (Time), Dolandırıcılık Durumu (Class - Hedef)
+Kullanılan Teknolojiler: Python 3.x, Pandas & NumPy (Veri Ön İşleme),
+Scikit-Learn (Logistic Regression, Decision Tree, StandardScaler),
+Streamlit (Web Arayüzü ve Simülasyon) 
+
 
 
 
